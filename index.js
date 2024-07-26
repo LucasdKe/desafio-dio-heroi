@@ -1,5 +1,7 @@
-let nomeHeroi = "shaolin"
-let xpHeroi = 200
+const readlineSync = require('readline-sync')
+
+let nomeHeroi = readlineSync.question('Digite o nome do herói: ')
+let xpHeroi = parseInt(readlineSync.question('Digite o XP do herói: '), 10)
 
 switch (true) {
     case (xpHeroi <= 1000):
